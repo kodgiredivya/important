@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const obj = {
+            name: "divya",
+            city: "pune",
+            country: "india",
+            est: 2001
+        }
+
+        // normal way to access object memebers
+        let ct = obj.city;
+        let cty = obj.country;
+        console.log(ct, cty);
+
+        // this is "Destructuring" which is shortform to access the elements of objects 
+        let { city: cty1, est } = obj;
+        // this can be acssesed with key name also
+        // we can declare variable here also
+        console.log(cty1, est);
+
+        const arr = ["gigabyte", "MSI", "asus"];
+        let [b1, b2, b3] = arr;
+        [a2, ...a1] = arr;     // rest is used
+        console.log(a1, a2);
+        console.log(arr);
+        console.log(b1, b2, b3);
+        let a = 100;
+        let b = 20;
+        console.log("beforer=" + a, b);
+        [b, a] = [a, b];
+        console.log("after=" + a, b);
+    </script>
+</body>
+
+</html>

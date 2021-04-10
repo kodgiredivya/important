@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var a = 10;
+        function display() {
+            a = 50;
+            console.log("value of a inside function = " + a);
+        }
+        display();
+        console.log("outside function " + a);
+        // value remains constant only for primitive data type 
+        // example = int , float , char
+        // non primitve data type stores the address of the varaiable
+        // example = array ,object , function
+        const cc = [10];
+        cc[0] = 55;
+        console.log(cc);
+    </script>
+</body>
+
+</html>

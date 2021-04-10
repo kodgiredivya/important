@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //  Normal Function
+        function test(arg1, arg2) {
+            console.log("helloo " + arg1, arg2);
+        }
+        test("skillhub", "pune");
+
+        // IN ARROW FUNCTION IF SINGLE LINE IS PRESENT THEN BRACKET IS OPTIONAL
+        // IF SINGLE PARAMETER IS PRESENT THEN PARANTHESIS IS OPTIONAL
+        //  IN ARROW FUNCTION "THIS" ALWAYS POINTS TO WINDOW OBJECT
+
+        // * arrow function * 
+        var demo = (arg, arg2) => {
+            console.log("demo called" + arg, arg2);
+        }
+        demo("dell", "delhi");
+        var obj = {
+            name: "hp",
+            country: "usa",
+            showdata: () => {
+                console.log("********************************");
+                console.log(this);
+                console.log("*******************************");
+            }
+        }
+        obj.showdata();
+        console.log(this);
+
+    </script>
+</body>
+
+</html>
